@@ -17,6 +17,6 @@ app.use("/user", userRouter);
 
 // Establish a connection to the MongoDB database
 connectToDatabase().then(() => {
-    const PORT = process.env.PORT || 3000; 
+    const PORT = process.env.PORT || 3010; 
     app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 });
